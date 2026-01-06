@@ -12,6 +12,10 @@ public class LiftTests
     [Test]
     public void DoorsShouldBeClosedWhenLiftIsCreated()
     {
-        Assert.Pass();
+        //Act
+        var lift = new Lift();
+
+        //Assert
+        Assert.That(lift.Doors(), Is.EqualTo("CLOSED"));
     }
 }
